@@ -72,7 +72,7 @@ With
 
 openxpkictl [start|stop|restart]
 
-/etc/init.d/openxpkid [start|stop|restart|force-reload]
+/etc/init.d/openxpki [start|stop|restart|force-reload]
 
 we can start the OpenXPKI.
 

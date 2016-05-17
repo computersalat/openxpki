@@ -1,8 +1,12 @@
 #! /bin/sh
+# Start/Stop openxpki daemon
+#
 ### BEGIN INIT INFO
-# Provides:          openxpkid
+# Provides:          openxpki
 # Required-Start:    $local_fs $webserver mysql
 # Required-Stop:     $local_fs $webserver mysql
+# Should-Start:
+# Should-Stop:
 # Default-Start:     2 3 4 5
 # Default-Stop:      S 0 1 6
 # Short-Description: Start and stop the OpenXPKI backend daemon
@@ -18,8 +22,8 @@ PATH=/opt/myperl/bin:/usr/sbin:/usr/bin:/sbin:/bin
 DESC="OpenXPKI daemon"
 NAME=openxpki
 DAEMON=/opt/myperl/bin/openxpkictl
-PIDFILE=/var/run/openxpkid.pid
-SCRIPTNAME=/etc/init.d/openxpkid
+PIDFILE=/var/run/openxpki.pid
+SCRIPTNAME=/etc/init.d/openxpki
 
 # Exit if the package is not installed
 [ -x "$DAEMON" ] || exit 0

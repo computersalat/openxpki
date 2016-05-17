@@ -30,7 +30,7 @@ case "$1" in
     configure)
 	set +e
 	    # TODO - check for a running daemon
-        #invoke-rc.d --quiet openxpkid restart
+        #invoke-rc.d --quiet openxpki restart
         #if [ $? -gt 0 -a $? -eq 100 ]; then exit $?; fi
 	set -e
 
