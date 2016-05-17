@@ -2,7 +2,7 @@
  <group>
   <minimod>
    <version>0.01</version>
-   <description>MorphMini to set the persistent application, create new CA key, start openxpkid, apache, ...</description>
+   <description>MorphMini to set the persistent application, create new CA key, start openxpki, apache, ...</description>
    <minitag>OpenXPKILiveMini</minitag>
    <maintag>ALL</maintag> 
    <bootoption>ALL</bootoption>

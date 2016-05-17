@@ -14,7 +14,7 @@ use Cwd;
 diag("Certificate signing workflow\n") if $ENV{VERBOSE};
 
 my $socketfile = 't/var/openxpki/openxpki.socket'; 
-my $pidfile = 't/var/openxpki/openxpkid.pid';
+my $pidfile = 't/var/openxpki/openxpki.pid';
 
 TODO: {
     todo_skip 'See Issue #188', 38;

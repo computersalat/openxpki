@@ -5,7 +5,7 @@
         <user>openxpki</user>
         <group>openxpki</group>
         <socket_file>/var/openxpki/openxpki.socket</socket_file>
-        <pid_file>/var/run/openxpkid.pid</pid_file>
+        <pid_file>/var/run/openxpki.pid</pid_file>
         <session_dir>/var/openxpki/session</session_dir>
         <connection_timeout>120</connection_timeout>
         <session_lifetime>1200</session_lifetime>

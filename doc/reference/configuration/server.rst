@@ -40,7 +40,7 @@ Location of the locale files and the default language used. If you set another l
 
 **daemon settings**
 
-Those settings determine the properties of the OpenXPKI daemon `openxpkid`.::
+Those settings determine the properties of the OpenXPKI daemon `openxpki`.::
 
     name:          label for your process list, useful if you are running multiple servers.
     user:          Unix user to run as (numeric or name)
@@ -95,7 +95,7 @@ TODO - this is not used yet
 Watchdog
 --------
 
-The openxpkid daemon forks a watchdog process to take care of background processes.
+The openxpki daemon forks a watchdog process to take care of background processes.
 It is initialised with default settings, but you can provide your own values by setting them at ``system.watchdog``. ::
 
     # How to deal with exceptions

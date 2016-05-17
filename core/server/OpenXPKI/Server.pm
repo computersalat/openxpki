@@ -289,7 +289,7 @@ sub pre_loop_hook {
     eval{
 
         # Set verbose process name
-        $0 = sprintf ('openxpkid (%s) server', $self->{PARAMS}->{alias});
+        $0 = sprintf ('openxpki (%s) server', $self->{PARAMS}->{alias});
 
         if( $self->{PARAMS}->{process_group} ne $) ){
             $self->log(
@@ -481,7 +481,7 @@ sub do_process_request
     umask $self->{umask};
 
     # masquerade process...
-    $0 = sprintf ('openxpkid (%s) worker: idle', (CTX('config')->get('system.server.name') || 'main') );
+    $0 = sprintf ('openxpki (%s) worker: idle', (CTX('config')->get('system.server.name') || 'main') );
 
     ##! 2: "transport protocol detector"
     my $transport = undef;

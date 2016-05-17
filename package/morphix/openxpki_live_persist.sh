@@ -24,7 +24,7 @@ openxpki-configure --batch -- -setcfg database.type=MySQL --setcfg database.name
 # migrate password and aliases from sqlite database to MySQL
 (echo '.mode insert'; echo 'select * from certificate;')|sqlite3 /var/openxpki/sqlite.db._backend_|sed -e 's/INSERT INTO table/INSERT INTO certificate/'|mysql -uopenxpki -ppki openxpki
 (echo '.mode insert'; echo 'select * from aliases;')|sqlite3 /var/openxpki/sqlite.db._backend_|sed -e 's/INSERT INTO table/INSERT INTO aliases/'|mysql -uopenxpki -ppki openxpki
-/etc/init.d/openxpkid stop
+/etc/init.d/openxpki stop
 /etc/init.d/apache stop
 /etc/init.d/mysql stop
 # create 100 MB image
@@ -47,6 +47,6 @@ ln -s /mnt/loop/openxpki_live/var/lib/mysql /var/lib/mysql
 rm -rf /etc/openxpki
 ln -s /mnt/loop/openxpki_live/etc/openxpki /etc/openxpki
 /etc/init.d/mysql start
-/etc/init.d/openxpkid start
+/etc/init.d/openxpki start
 /etc/init.d/apache start
 echo "Successfully redeployed to ${MOUNTPOINT}, you should now be able to use a persistent OpenXPKI"

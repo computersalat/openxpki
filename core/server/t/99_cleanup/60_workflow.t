@@ -5,7 +5,7 @@ use Test::More;
 my @files = (                          
             "t/var/openxpki/connector.log",
             "t/var/openxpki/stderr.log",
-            "t/var/openxpki/openxpkid.pid",
+            "t/var/openxpki/openxpki.pid",
             "t/var/openxpki/openxpki.socket",                          
             );
 

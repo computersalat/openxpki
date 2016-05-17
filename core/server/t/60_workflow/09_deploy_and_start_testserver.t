@@ -23,7 +23,7 @@ diag("Deploying OpenXPKI test instance\n");
 `mkdir -p t/var/openxpki/session/`;
 
 my $socketfile = 't/var/openxpki/openxpki.socket'; 
-my $pidfile = 't/var/openxpki/openxpkid.pid';
+my $pidfile = 't/var/openxpki/openxpki.pid';
 
 -e $socketfile && die "Socketfile exists - please stop server/remove socket";
 

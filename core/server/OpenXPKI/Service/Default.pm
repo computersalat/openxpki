@@ -800,11 +800,11 @@ sub __change_state : PRIVATE {
     # Set the daemon name after enterin MAIN_LOOP
     
     if ($new_state eq ' MAIN_LOOP') {
-        $0 = sprintf ('openxpkid (%s) worker: %s (%s)', 
+        $0 = sprintf ('openxpki (%s) worker: %s (%s)',
             (CTX('config')->get('system.server.name') || 'main'), 
             CTX('session')->get_user(), CTX('session')->get_role());
     } elsif ($new_state eq ' NEW') {
-        $0 = sprintf ('openxpkid (%s) worker: idle', (CTX('config')->get('system.server.name') || 'main'));
+        $0 = sprintf ('openxpki (%s) worker: idle', (CTX('config')->get('system.server.name') || 'main'));
     }
 
     return 1;

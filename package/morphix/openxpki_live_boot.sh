@@ -22,7 +22,7 @@ if [ "$MOUNTPOINT" == "" ]; then
     exit 1
 fi
 echo "Found image at $MOUNTPOINT, relinking OpenXPKI configuration and MySQL databases"
-/etc/init.d/openxpkid stop
+/etc/init.d/openxpki stop
 /etc/init.d/mysql stop
 losetup /dev/loop0 ${MOUNTPOINT}/openxpki_live.ext2
 mkdir /mnt/loop

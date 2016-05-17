@@ -13,7 +13,7 @@ log4perl: t/28_log/log4perl.conf
 user:         openxpki
 group:        openxpki
 socket_file:  t/var/openxpki/openxpki.socket
-pid_file:     t/var/openxpki/openxpkid.pid
+pid_file:     t/var/openxpki/openxpki.pid
 stderr:       t/var/openxpki/stderr.log
 tmpdir:       /var/tmp
 environment:

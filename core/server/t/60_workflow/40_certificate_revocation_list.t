@@ -13,7 +13,7 @@ diag("Certificate revocation list workflow\n") if $ENV{VERBOSE};
 
 # reuse the already deployed server
 my $socketfile = 't/var/openxpki/openxpki.socket';
-my $pidfile    = 't/var/openxpki/openxpkid.pid';
+my $pidfile    = 't/var/openxpki/openxpki.pid';
 
 TODO: {
     todo_skip 'See Issue #188', 9;
